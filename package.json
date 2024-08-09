@@ -1,0 +1,22 @@
+{
+  "name": "parking-aid",
+  "version": "1.0.0",
+  "description": "This project aims to detect the parking sign to help user to make better judgement about whether it is allowed to park. As in Sweden the parking comprise of different rule its difficult for a newbie to understand. This app will aid the user to make better judgment with help of ai",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "packageManager": "yarn@3.4.1",
+  "private": true,
+  "workspaces": [
+    "services/*",
+    "front-end/*"
+  ],
+  "scripts": {
+    "start:server": "yarn workspaces foreach --jobs 20 --interlaced --parallel --include  '@services/*' run dev",
+    "lint": "yarn workspaces foreach --jobs 20 --interlaced --parallel --include  '@services/*' run lint"
+  },
+  "devDependencies": {
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5"
+  }
+}

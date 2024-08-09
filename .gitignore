@@ -1,0 +1,11 @@
+build
+node_modules
+dist
+.env
+cache
+*.gz
+.vscode
+.task
+.terraform
+secrets.tfvars
+```
