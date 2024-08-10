@@ -8,4 +8,5 @@ cache
 .task
 .terraform
 secrets.tfvars
+.traindeddata
 ```
