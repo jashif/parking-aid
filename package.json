@@ -13,6 +13,7 @@
   ],
   "scripts": {
     "start:server": "yarn workspaces foreach --jobs 20 --interlaced --parallel --include  '@services/*' run dev",
+    "start:app": "yarn workspaces foreach --jobs 20 --interlaced --parallel --include  '@front-end/*' run start",
     "lint": "yarn workspaces foreach --jobs 20 --interlaced --parallel --include  '@services/*' run lint"
   },
   "devDependencies": {
